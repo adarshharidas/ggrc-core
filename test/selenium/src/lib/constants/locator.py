@@ -136,6 +136,41 @@ class Dashboard(object):
       By.CSS_SELECTOR, _GET_LIST + ' [href="/objectBrowser"]')
 
 
+class CreateObjectDropdown(object):
+    """Locators for create object dropdown."""
+    _GET_LIST = ".inner-nav-item"
+    # Dropdown regulations link
+    CREATE_REGULATION_BTN_CSS = (
+        By.CSS_SELECTOR, _GET_LIST + ' [data-object-singular="Regulation"]')
+
+
+class CreateRegulationWidget(object):
+    """Locators for create object dropdown."""
+    _GET_LIST = ".row-fluid "
+    # Title textbox
+    TITLE_TEXTBOX_CSS = (By.CSS_SELECTOR, _GET_LIST +
+                         ' [data-id="title_txtbx"]')
+    # Description textbox
+    DESCRIPTION_TEXTBOX_CSS = (
+        By.CSS_SELECTOR, _GET_LIST + ' [data-id="description_hidden"] rich-text')
+
+
+class Regulation(object):
+    """Locators for Regulation page."""
+    _GET_LIST = ".hidden-widgets-list"
+    # Add tab button
+    REGULATION_ADD_TAB_BTN_CSS = (
+        By.CSS_SELECTOR, _GET_LIST + ' [href="#dropdown-widgets"]')
+
+
+class AddTabDropdown(object):
+    """Locators for add tab dropdown."""
+    _GET_LIST = ".dropdown-menu"
+    # Dropdown regulations link
+    ADD_TAB_PRODUCTS_BTN_CSS = (
+        By.CSS_SELECTOR, _GET_LIST + ' [href="/regulations/7#!product"]')
+
+
 class LhnMenu(object):
   """Locators for Menu in header"""
   class _Locator(object):
